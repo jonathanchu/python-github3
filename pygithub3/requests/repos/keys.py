@@ -23,7 +23,7 @@ class Create(Request):
     uri = 'repos/{user}/{repo}/keys'
     resource = Key
     body_schema = {
-        'schema': ('title', 'key'),
+        'schema': ('title', 'key', 'read_only'),
         'required': ('title', 'key')
     }
 
