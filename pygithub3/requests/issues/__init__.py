@@ -39,6 +39,6 @@ class Update(Request):
     resource = Issue
     body_schema = {
         'schema': ('title', 'body', 'assignee', 'state', 'milestone',
-                   'lables'),
+                   'labels'),
         'required': ()
     }
